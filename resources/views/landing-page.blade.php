@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/gluvia-icon-tp.png') }}">
     <title>GluVia - Non-Invasif</title>
 
     <!-- Fonts -->
@@ -58,12 +59,8 @@
             <div class="flex justify-between items-center h-20">
                 <a href="/" class="flex-shrink-0 flex items-center gap-2">
                     <!-- Logo Icon -->
-                    <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                        </svg>
+                    <div class="w-8 h-8 rounded-full flex items-center justify-center">
+                        <img src="{{ asset('img/gluvia-icon-tp.png') }}" alt="Icon GluVia">
                     </div>
                     <span class="font-bold text-2xl tracking-tight text-blue-900">GluVia</span>
                 </a>
@@ -217,12 +214,9 @@
                             <!-- Central Icon/Graphic -->
                             <div class="text-center text-white relative z-10">
                                 <div
-                                    class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-md shadow-inner border border-white/30">
-                                    <svg class="w-24 h-24 text-white" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                                    </svg>
+                                    class="w-52 h-52 bg-white rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-md shadow-inner border border-white/30">
+                                    <img src="{{ asset('img/gluvia-icon-tp.png') }}" alt="Icon GluVia"
+                                        class="w-36 h-36 rounded-full object-cover">
                                 </div>
                             </div>
 
@@ -246,10 +240,14 @@
                         Glukosa dengan Lebih Mudah</h2>
                     <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
                         <p>
-                            GluVia memiliki misi untuk membuat manajemen kondisi glukosa menjadi lebih mudah, nyaman, dan dapat diakses oleh semua orang.
+                            GluVia memiliki misi untuk membuat manajemen kondisi glukosa menjadi lebih mudah, nyaman,
+                            dan dapat diakses oleh semua orang.
                         </p>
                         <p>
-                            Kami memahami bahwa pemantauan glukosa tradisional, dengan pengambilan sampel yang menyakitkan dan peralatan yang besar adalah sebuah beban. Itulah sebabnya kami menciptakan kembali proses tersebut dari awal, menggunakan teknologi tanpa jarum dan nyeri, untuk membaca kadar gula darah melalui kulit.
+                            Kami memahami bahwa pemantauan glukosa tradisional, dengan pengambilan sampel yang
+                            menyakitkan dan peralatan yang besar adalah sebuah beban. Itulah sebabnya kami menciptakan
+                            kembali proses tersebut dari awal, menggunakan teknologi tanpa jarum dan nyeri, untuk
+                            membaca kadar gula darah melalui kulit.
                         </p>
                     </div>
                 </div>
@@ -267,7 +265,8 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
-                <div class="bg-white rounded-2xl p-8 transition hover:shadow-lg hover:bg-sky-100/50 border border-slate-50">
+                <div
+                    class="bg-white rounded-2xl p-8 transition hover:shadow-lg hover:bg-sky-100/50 border border-slate-50">
                     <div
                         class="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-200">
                         <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -281,7 +280,8 @@
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="bg-white rounded-2xl p-8 transition hover:shadow-lg hover:bg-sky-100/50 border border-slate-50">
+                <div
+                    class="bg-white rounded-2xl p-8 transition hover:shadow-lg hover:bg-sky-100/50 border border-slate-50">
                     <div
                         class="w-14 h-14 rounded-xl bg-sky-500 flex items-center justify-center text-white mb-6 shadow-lg shadow-sky-200">
                         <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -295,7 +295,8 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="bg-white rounded-2xl p-8 transition hover:shadow-lg hover:bg-sky-100/50 border border-slate-50">
+                <div
+                    class="bg-white rounded-2xl p-8 transition hover:shadow-lg hover:bg-sky-100/50 border border-slate-50">
                     <div
                         class="w-14 h-14 rounded-xl bg-indigo-500 flex items-center justify-center text-white mb-6 shadow-lg shadow-indigo-200">
                         <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -335,12 +336,8 @@
         <div
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                        stroke="currentColor" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                    </svg>
+                <div class="w-8 h-8 rounded-full flex items-center justify-center">
+                    <img src="{{ asset('img/gluvia-icon-tp.png') }}" alt="Icon GluVia">
                 </div>
                 <span class="font-bold text-xl text-slate-900">GluVia</span>
             </div>
