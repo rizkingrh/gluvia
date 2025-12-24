@@ -10,28 +10,20 @@ class HistoryController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'glucose' => 'required|string',
+            'glucose' => 'required',
             'status' => 'required|string',
         ]);
         
-        History::create($validated);
-
+        $history = History::create($validated);
+        
         return response()->json([
             'error' => false,
             'message' => 'History created successfully',
         ], 201);
     }
 
-    public function index(Request $request)
+    public function index()
     {
-        $perPage = $request->input('per_page', 10);
-        
-        // Calculate stats
-        $averageGlucose = History::all()->avg('glucose');
-        $totalRecords = History::count();
-
-        $histories = History::orderBy('created_at', 'desc')->paginate($perPage)->withQueryString();
-
-        return view('glucose-history', compact('histories', 'averageGlucose', 'totalRecords', 'perPage'));
+        return view('glucose-history');
     }
 }
